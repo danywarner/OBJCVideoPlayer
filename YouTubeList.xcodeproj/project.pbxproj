@@ -13,6 +13,7 @@
 		655F92261C84D713002481B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655F92241C84D713002481B1 /* Main.storyboard */; };
 		655F92281C84D713002481B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655F92271C84D713002481B1 /* Assets.xcassets */; };
 		655F922B1C84D713002481B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655F92291C84D713002481B1 /* LaunchScreen.storyboard */; };
+		655F92351C84D758002481B1 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F92341C84D758002481B1 /* HTTPService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		655F92271C84D713002481B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		655F922A1C84D713002481B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		655F922C1C84D713002481B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655F92331C84D758002481B1 /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		655F92341C84D758002481B1 /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		655F921A1C84D713002481B1 /* YouTubeList */ = {
 			isa = PBXGroup;
 			children = (
+				655F92321C84D738002481B1 /* Services */,
 				655F921E1C84D713002481B1 /* AppDelegate.h */,
 				655F921F1C84D713002481B1 /* AppDelegate.m */,
 				655F92211C84D713002481B1 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				655F921C1C84D713002481B1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		655F92321C84D738002481B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				655F92331C84D758002481B1 /* HTTPService.h */,
+				655F92341C84D758002481B1 /* HTTPService.m */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				655F92231C84D713002481B1 /* ViewController.m in Sources */,
+				655F92351C84D758002481B1 /* HTTPService.m in Sources */,
 				655F92201C84D713002481B1 /* AppDelegate.m in Sources */,
 				655F921D1C84D713002481B1 /* main.m in Sources */,
 			);
