@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  VideoCell.h
 //  YouTubeList
 //
 //  Created by Daniel Warner on 2/29/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
-
+@interface VideoCell : UITableViewCell
 
 @end
-
