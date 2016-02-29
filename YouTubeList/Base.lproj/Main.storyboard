@@ -29,7 +29,7 @@
                                 <rect key="frame" x="20" y="39" width="560" height="561"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="113" id="Pup-ax-PWq" customClass="VideoCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="main" rowHeight="113" id="Pup-ax-PWq" customClass="VideoCell">
                                         <rect key="frame" x="0.0" y="28" width="560" height="113"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pup-ax-PWq" id="Kkf-fi-KTp">
@@ -45,16 +45,16 @@
                                                                 <constraint firstAttribute="width" constant="140" id="zd8-Q8-OoQ"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxA-4c-ucK">
-                                                            <rect key="frame" x="161" y="8" width="375" height="37"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxA-4c-ucK">
+                                                            <rect key="frame" x="156" y="8" width="380" height="34"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="34" id="hME-iR-eY8"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTe-Tq-NwL">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTe-Tq-NwL">
                                                             <rect key="frame" x="161" y="45" width="375" height="43"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,7 +89,6 @@
                                             <outlet property="descLbl" destination="aTe-Tq-NwL" id="t5I-eL-qBC"/>
                                             <outlet property="thumbImg" destination="cir-70-huw" id="UHv-x4-z7c"/>
                                             <outlet property="titleLbl" destination="yxA-4c-ucK" id="6eE-o3-GFY"/>
-                                            <outlet property="view" destination="JAE-bo-jbz" id="elY-8Y-iPN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
