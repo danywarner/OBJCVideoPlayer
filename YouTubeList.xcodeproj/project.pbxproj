@@ -16,6 +16,7 @@
 		655F92351C84D758002481B1 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F92341C84D758002481B1 /* HTTPService.m */; };
 		655F92391C84F0C8002481B1 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F92381C84F0C8002481B1 /* VideoCell.m */; };
 		655F923D1C84F556002481B1 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F923C1C84F556002481B1 /* Video.m */; };
+		655F92411C850D85002481B1 /* VideoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 655F92401C850D85002481B1 /* VideoVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		655F92381C84F0C8002481B1 /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 		655F923B1C84F556002481B1 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		655F923C1C84F556002481B1 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		655F923F1C850D85002481B1 /* VideoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoVC.h; sourceTree = "<group>"; };
+		655F92401C850D85002481B1 /* VideoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,13 +70,12 @@
 		655F921A1C84D713002481B1 /* YouTubeList */ = {
 			isa = PBXGroup;
 			children = (
+				655F923E1C850D6D002481B1 /* Controller */,
 				655F923A1C84F545002481B1 /* Model */,
 				655F92361C84F0B4002481B1 /* View */,
 				655F92321C84D738002481B1 /* Services */,
 				655F921E1C84D713002481B1 /* AppDelegate.h */,
 				655F921F1C84D713002481B1 /* AppDelegate.m */,
-				655F92211C84D713002481B1 /* ViewController.h */,
-				655F92221C84D713002481B1 /* ViewController.m */,
 				655F92241C84D713002481B1 /* Main.storyboard */,
 				655F92271C84D713002481B1 /* Assets.xcassets */,
 				655F92291C84D713002481B1 /* LaunchScreen.storyboard */,
@@ -116,6 +118,17 @@
 				655F923C1C84F556002481B1 /* Video.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		655F923E1C850D6D002481B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				655F92211C84D713002481B1 /* ViewController.h */,
+				655F92221C84D713002481B1 /* ViewController.m */,
+				655F923F1C850D85002481B1 /* VideoVC.h */,
+				655F92401C850D85002481B1 /* VideoVC.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +205,7 @@
 				655F92391C84F0C8002481B1 /* VideoCell.m in Sources */,
 				655F92351C84D758002481B1 /* HTTPService.m in Sources */,
 				655F923D1C84F556002481B1 /* Video.m in Sources */,
+				655F92411C850D85002481B1 /* VideoVC.m in Sources */,
 				655F92201C84D713002481B1 /* AppDelegate.m in Sources */,
 				655F921D1C84D713002481B1 /* main.m in Sources */,
 			);
