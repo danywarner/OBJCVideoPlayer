@@ -44,6 +44,35 @@ var tutorials = [
 ];
 
 
+var comments = [
+	{
+		username: "Jack94d",
+		comment: "This video was really cool. Any chance whatever the fawk"
+	}
+];
+
+
+app.put('/comments',function(req,res) {
+	var someOBJ = req.body;
+
+	var theID = someOBJ.uniqueId;
+
+	//talk to the DB, find the record by id
+	//the replace the existing record with req.body
+	res.send("successfully updated");
+});
+
+app.post('/comments', function(req, res) {
+	var comment = req.body;
+	if (comment.username && comment.comment) {
+		comments.push(comment);
+	} else {
+		res.send("you posted invalid data");
+	}
+	res.send("you successfully posted a new comment");
+	console.log(comments);
+});
+
 app.get('/tutorials', function(req, res) {
 	console.log("GET from server");
 	res.send(tutorials);
